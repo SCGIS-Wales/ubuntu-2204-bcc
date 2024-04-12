@@ -15,7 +15,8 @@ RUN set -x && \
     apt-get install -y ${UBUNTU_SYSTEM_PACKAGES_LIST} linux-headers-${DISTRO} && \
     apt-get autoclean && \
     apt-get --purge -y autoremove && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+    pip install pip setuptools --upgrade
 
 # compile bcc
 RUN git clone https://github.com/iovisor/bcc.git && \
