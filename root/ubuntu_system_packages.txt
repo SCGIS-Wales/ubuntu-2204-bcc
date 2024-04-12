@@ -1,6 +1,8 @@
+aptitude
 arping
 bash
 bc
+binutils
 bison
 bpfcc-tools
 bpftrace
@@ -18,6 +20,7 @@ libclang-11-dev
 libclang-12-dev
 libedit-dev
 libelf-dev
+libelf1
 libfl-dev
 libllvm11
 libllvm12
@@ -26,7 +29,9 @@ libssl-dev
 llvm-11-dev
 llvm-12-dev
 netperf
+pbuilder
 procps
+python-is-python3
 python3 zlib1g-dev
 python3-bpfcc
 python3-distutils
